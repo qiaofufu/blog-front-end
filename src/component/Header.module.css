@@ -1,0 +1,10 @@
+.headerComponent {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*width: 100%;*/
+}
+
+.headerItem {
+    margin: 5px 20px;
+}
