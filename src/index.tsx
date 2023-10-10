@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import {Error} from "./pages/error/Error";
 import {Home} from "./pages/home/Home";
-import {Archive} from "./pages/archive/archive";
+import {Archive} from "./pages/archive/Archive";
+
 
 const router = createBrowserRouter([
     {
@@ -22,10 +22,14 @@ const router = createBrowserRouter([
             {
                 path: "/archive",
                 element: <Archive/>,
+            },
+            {
+
             }
         ]
     }
 ])
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

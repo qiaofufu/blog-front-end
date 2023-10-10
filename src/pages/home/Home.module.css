@@ -1,0 +1,12 @@
+.homeContainer {
+
+}
+
+.contactContainer {
+    font-family: var(--font-family);
+    display: flex;
+}
+
+.contactItem {
+    color: var(--noramal-text-color);
+}

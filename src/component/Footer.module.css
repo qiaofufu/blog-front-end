@@ -1,4 +1,33 @@
 .footerContainer {
     position: absolute;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px #ccc solid;*/
+    width: 48rem;
+    height: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footerLeft {
+    align-self: flex-start;
+}
+
+.footerRight {
+    align-self: flex-end;
+}
+
+.navItem {
+    font-family: var(--font-family);
+    color: var(--secondary-text-color);
+    text-decoration: underline;
+}
+
+.navItem:hover {
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: underline;
 }

@@ -1,11 +1,12 @@
 import {isRouteErrorResponse, useRouteError} from "react-router-dom";
+import styles from './Error.module.css'
 
 export function Error() {
     const err  = useRouteError()
     console.log(err)
     if (isRouteErrorResponse(err)) {
         return (
-            <div id="error-page">
+            <div className={styles.errorContainer}>
                 <h1>Oops!</h1>
                 <p>Sorry, an unexpected error has occurred.</p>
                 <p>
@@ -15,7 +16,7 @@ export function Error() {
         )
     } else {
         return (
-            <div id="error-page">unknown error</div>
+            <div className={styles.errorContainer}>unknown error</div>
         )
     }
 

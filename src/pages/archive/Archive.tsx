@@ -1,3 +1,7 @@
+
+import {RecordItem} from "./component/RecordItem"
+import {RecordTable} from "./component/RecordTable";
+
 export function Archive() {
     const data = [
         {
@@ -16,33 +20,11 @@ export function Archive() {
             title: "HTTPS-TLS 握手",
         },
     ]
-    const archives = data.map((item) => <RecordItem data={item}/>)
     return (
         <div>
-            Archive
-            <div>
-                {archives}
-            </div>
+            <RecordTable data={{year:2023, records:data}}/>
         </div>
     )
 }
 
 
-interface RecordItemProps {
-    id: number,
-    createAt: Date,
-    title: string,
-}
-
-function RecordItem( {data}:{data:RecordItemProps} ) {
-    return (
-        <div>
-            <div>
-                {data.createAt.toLocaleDateString()}
-            </div>
-            <div>
-                {data.title}
-            </div>
-        </div>
-    )
-}

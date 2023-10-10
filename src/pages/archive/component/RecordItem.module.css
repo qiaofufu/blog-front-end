@@ -1,0 +1,10 @@
+.recordTime {
+    font-family: var(--font-family);
+    text-align: left;
+}
+
+.recordTitle {
+    font-family: var(--font-family);
+    text-decoration: underline;
+    cursor:  pointer;
+}
