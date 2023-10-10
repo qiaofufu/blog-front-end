@@ -1,0 +1,32 @@
+.copy {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+}
+
+.copy:hover {
+    cursor: pointer;
+    color: var(--main-text-color)
+}
+
+.figure {
+    background: var(--code-backgroun-color);
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+.lineNumber {
+    text-align: right;
+    padding-right: 10px;
+    border-right: 1px solid var(--secondary-text-color);
+}
+
+.codeRow {
+    padding-left: 10px;
+}

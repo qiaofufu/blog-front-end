@@ -1,3 +1,4 @@
+
 import {Col, Row} from "antd";
 import styles from "./RecordItem.module.css";
 import {Link} from "react-router-dom";

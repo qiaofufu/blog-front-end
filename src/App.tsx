@@ -7,13 +7,11 @@ import {Outlet} from "react-router-dom";
 
 function App() {
   return (
-    <div className={styles.App}>
-          <Layout className={styles.Layout}>
-            <Header></Header>
-            <Outlet></Outlet>
-            <Footer></Footer>
-          </Layout>
-    </div>
+      <Layout  className={styles.App} >
+        <Header></Header>
+        <Outlet></Outlet>
+        <Footer></Footer>
+      </Layout>
   );
 }
 
