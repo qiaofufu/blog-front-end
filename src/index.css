@@ -1,4 +1,5 @@
 :root {
+  --color-background: #fafafa;
   --noramal-text-color: #22272a;
   --main-text-color: #cc2a41;
   --secondary-text-color: #666;
@@ -7,7 +8,7 @@
 }
 
 body {
-  background: #fafafa;
+  background: var(--color-background);
   color: var(--noramal-text-color);
   margin: 0;
   padding: 0;

@@ -1,5 +1,6 @@
 import {Col, Row} from "antd";
 import styles from "./RecordItem.module.css";
+import {Link} from "react-router-dom";
 
 
 export interface RecordItemProps {
@@ -23,10 +24,8 @@ export function RecordItem( {data}:{data:RecordItemProps} ) {
                     day: "2-digit",
                 })}
             </Col>
-            <Col className={styles.recordTitle}>
-                <div onClick={handleGetDetail}>
-                    {data.title}
-                </div>
+            <Col>
+                <Link className={styles.recordTitle} to={`/detail/${data.id}`}>{data.title} </Link>
             </Col>
         </Row>
     )

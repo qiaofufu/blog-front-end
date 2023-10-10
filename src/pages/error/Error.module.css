@@ -1,3 +1,9 @@
 .errorContainer {
     text-align: center;
+    padding-top: 20px;
+    color: var(--secondary-text-color);
+}
+
+h1 {
+    text-align: center;
 }

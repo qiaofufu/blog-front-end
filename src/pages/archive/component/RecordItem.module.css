@@ -6,5 +6,12 @@
 .recordTitle {
     font-family: var(--font-family);
     text-decoration: underline;
+    color: var(--noramal-text-color);
     cursor:  pointer;
+}
+
+.recordTitle:hover {
+    text-decoration: underline;
+    color: var(--secondary-text-color);
+    text-decoration-color: var(--secondary-text-color);
 }
