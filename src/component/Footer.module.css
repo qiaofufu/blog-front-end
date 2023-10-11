@@ -8,7 +8,7 @@
     height: 20px;
     margin-bottom: 20px;
     text-align: center;
-    color: var(--secondary-text-color);
+    color: var(--footer-color);
     font-size: 12px;
     font-weight: 400;
 }
@@ -23,7 +23,7 @@
 
 .navItem {
     font-family: var(--font-family);
-    color: var(--secondary-text-color);
+    color: var(--footer-color);
     text-decoration: underline;
 }
 

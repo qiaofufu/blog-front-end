@@ -7,7 +7,7 @@ export function Error() {
     if (isRouteErrorResponse(err)) {
         return (
             <div className={styles.errorContainer}>
-                <h1>Oops!</h1>
+                <h1 className={styles.h1}>Oops!</h1>
                 <p>Sorry, an unexpected error has occurred.</p>
                 <p>
                     <i>{err.statusText || err.status}</i>

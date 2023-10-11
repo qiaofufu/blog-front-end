@@ -1,7 +1,7 @@
 pre code.hljs {
-    display: block;
-    overflow-x: auto;
-    padding: 1em
+    /*display: block;*/
+    /*overflow-x: auto;*/
+    padding: 10px;
 }
 code.hljs {
     padding: 3px 5px
@@ -22,6 +22,8 @@ code.hljs {
     background: var(--code-backgroun-color);
     border: solid var(--code-backgroun-color);
     border-radius: 6px;
+    display: flex;
+    flex-direction: column;
 }
 .hljs-doctag,
 .hljs-keyword,
@@ -117,5 +119,54 @@ code.hljs {
 .hljs-punctuation,
 .hljs-tag {
     /* purposely ignored */
+}
 
+
+.figure {
+    /*background: red;*/
+    background: var(--code-backgroun-color);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+
+.lineNumber {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 10px;
+    border-right: 1px solid #666;
+    border-left: initial;
+    border-top: initial;
+    border-bottom: initial;
+}
+
+.codeRow {
+    padding-left: 10px;
+    border: initial;
+}
+
+.codeDetail {
+    display: none;
+}
+
+.copyBtn {
+    position: absolute;
+    /*float: right;*/
+    top: -5px;
+    right: 10px;
+}
+
+.copyBtn:hover {
+    cursor: pointer;
+    color: var(--main-text-color)
 }

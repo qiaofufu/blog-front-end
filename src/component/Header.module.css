@@ -29,7 +29,7 @@
 .navItem {
     font-family: var(--font-family);
     font-weight: 200;
-    color: var(--main-text-color);
+    color: var(--nav-item-color);
 }
 
 .navItem:hover {
